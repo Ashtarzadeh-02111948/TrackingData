@@ -19,6 +19,13 @@ A color would also be assigned to each of these general statuses that would colo
 Green for delivered, light blue for delivering, yellow for pending, orange for pick up, red for tracking status containing 'alert'.
 Yellow will also be assigned to invalid tracking numbers (those that arent USPS).
 
+I also added regular expressions early on that would determine what type of carrier the tracking number is for, whether it was
+FedEx, USPS, or UPS. This would allow for future support if I had access to those other carrier's APIs. As of now, the regular
+expression function is mostly redundant. 
+
+The script will run once the 'Check Tracking Status' button is clicked under 'Custom Menu' in the top toolbar on Google Sheets.
+
+
 
 
 
