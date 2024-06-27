@@ -248,14 +248,3 @@ function split_array(array, chunkSize) {
   return result;
 }
 
-function checkingBox() {
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
-  var rangeI = sheet.getRange("I2:I" + sheet.getLastRow());
-  var valuesI = rangeI.getValues();
-
-  for (var i = 0; i < valuesI.length; i++) {
-    if (valuesI[i][0] && valuesI[i][0].toString().toLowerCase().includes("delivered")) {
-      sheet.getRange("L" + (i + 2)).setValue(true); // +2 because row indices are 1-based, and we start from row 2
-    }
-  }
-}
