@@ -16,8 +16,6 @@ function onOpen() {
   ui.createMenu('Custom Menu')
       .addItem('Initialize for coloring', 'initialize')
       .addItem('Check Tracking Status', 'processMonitorTracking')
-      .addItem('Auto checkbox delivered','checkingBox' )
-      .addItem('Get Onnit Tracking','main' )
       .addToUi();
 }
 
